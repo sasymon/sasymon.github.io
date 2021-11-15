@@ -18,6 +18,10 @@
     div {
       background: linear-gradient(45deg, #FFC300, #BB8FCE)
     }
+    .profile-pic{
+        width: 150px;
+        height: auto;
+    }
 
 
     
