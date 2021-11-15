@@ -15,7 +15,7 @@
       font-size: 16px;
       font-family: Arial;
     }
-    div {
+    body {
       background: linear-gradient(45deg, #FFC300, #BB8FCE)
     }
     .profile-pic{
