@@ -1,7 +1,6 @@
 
     html {
       font-family: Arial;
-      background: linear-gradient(45deg, #ffa600, #FFF, #BB8FCE)no-repeat
     }
     h1 {
       text-align: center;
@@ -12,6 +11,10 @@
     }
     h3 {
         text-align: left;
+    }
+        body {
+      background: linear-gradient(45deg, #ffa600, #FFF, #BB8FCE)no-repeat;
+      background-size: cover;
     }
     
     div {
