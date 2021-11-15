@@ -5,7 +5,6 @@
     h1 {
       text-align: center;
       color: rgb(0, 0, 0);
-      background: rgb(182, 182, 231);
     }
     h2 {
       text-align: left;
@@ -14,7 +13,7 @@
         text-align: left;
     }
         body {
-      background: linear-gradient(45deg, #FFC300, #BB8FCE)
+      background: linear-gradient(45deg, #FFC300, #FFF, #BB8FCE);
     }
     .profile-pic{
         width: 150px;
@@ -22,7 +21,10 @@
         margin: 0px 15px 0px 0px;
 
     }
-
+    div {
+      background: rgb(182, 182, 231);
+      border-radius 45px, 45px, 45px, 45px;
+    }
 
     
   
