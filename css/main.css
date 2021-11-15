@@ -1,6 +1,7 @@
 
     html {
       font-family: Arial;
+      background: linear-gradient(45deg, #ffa600, #FFF, #BB8FCE)no-repeat
     }
     h1 {
       text-align: center;
@@ -12,19 +13,47 @@
     h3 {
         text-align: left;
     }
-        body {
-      background: linear-gradient(45deg, #FFC300, #FFF, #BB8FCE);
-    }
-    .profile-pic{
-        width: 150px;
-        height: auto;
-        margin: 0px 15px 0px 0px;
-
-    }
+    
     div {
       background: rgb(182, 182, 231);
-      border-radius 45px, 45px, 45px, 45px;
+      border-radius: 45px, 45px, 45px, 45px;
     }
-
-    
+    .profile-pic{
+      width: 150px;
+      height: auto;
+      margin: 0px 15px 0px 0px;
+    }
+    .dropbutton {
+      background-color: #f8b63c;
+      color:black;
+      padding: 15px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  .dropdown { 
+    position: relative;
+    display: inline-block;
+  }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 170px;
+      z-index: 1;
+      border:rgb(0, 0, 0)
+    }
+    .dropdown-content a{
+      color: black;
+      padding: 10px 15px;
+      display: block;
+    }
+    .dropdown-content a:hover{
+      background-color: #f8b63c;
+    }
+    .dropdown:hover .dropdown-content{
+      display: block;
+    }
+    .dropdown:hover .dropbutton {
+      background-color: #ffa600;
+    }
   
