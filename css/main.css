@@ -14,12 +14,11 @@
     }
         body {
       background: linear-gradient(45deg, #ffa600, #FFF, #BB8FCE)no-repeat;
-      background-size: cover;
     }
     
-    div {
+    /* div {
       background: rgb(182, 182, 231);
-      border-radius: 45px, 45px, 45px, 45px;
+      border-radius: 45px, 45px, 45px, 45px; */
     }
     .profile-pic{
       width: 150px;
