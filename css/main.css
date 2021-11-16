@@ -1,16 +1,20 @@
 
     html {
       font-family: Arial;
-      background: linear-gradient(45deg, #ffa600, #FFF, #BB8FCE)no-repeat;
-      height: auto;
+      height: fit-content;
+      min-height: 100%;
+    
     }
     h1 {
       text-align: center;
       color: rgb(0, 0, 0);
     
     }
-        main {
-      background:""
+        body {
+      background:linear-gradient(45deg, #ffa600, #FFF, #BB8FCE)no-repeat;
+      
+      
+    
     }
     header {
       background:#82b3ec;
@@ -22,6 +26,7 @@
       border-radius: 10px;
       text-align: center;
     }
+
     .text-box {
       background:#82b3ec;
       width: fit-content;
