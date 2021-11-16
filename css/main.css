@@ -5,17 +5,19 @@
     h1 {
       text-align: center;
       color: rgb(0, 0, 0);
+    
     }
-    h2 {
-      text-align: left;
-    }
-    h3 {
-        text-align: left;
-    }
-        body {
+        main {
       background: linear-gradient(45deg, #ffa600, #FFF, #BB8FCE)no-repeat;
     }
-    
+    header {
+      background: linear-gradiant (rgb(130, 179, 236), rgb(240, 219, 36));
+      width: 80%;
+      margin: 25px;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
     /* div {
       background: rgb(182, 182, 231);
       border-radius: 45px, 45px, 45px, 45px; 
