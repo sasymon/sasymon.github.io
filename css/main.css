@@ -18,13 +18,21 @@
     }
     header {
       background:#82b3ec;
-      width: fit-content;
+      width: 60%;
       max-width: 80%;
       box-shadow: 3px 3px 5px rgb(63, 61, 61);
       margin: 25px auto;
       padding: 15px;
       border-radius: 10px;
-      text-align: center;
+    
+    }
+    .header-pic{
+      border-radius: 50%;
+      width: 80px;
+      height: auto;
+      margin: 10px 10px 10px 0px;
+      float: left;   
+      
     }
 
     .text-box {
@@ -34,14 +42,15 @@
       max-width: 80%;
       box-shadow: 3px 3px 5px rgb(63, 61, 61);
       margin: 25px auto;
-      padding: 15px;
+      padding: 15px 15px 15px 15px;
       border-radius: 10px;
       text-align: left;
     }
     .profile-pic{
       width: 150px;
       height: auto;
-      margin: 0px 15px 0px 0px;
+      margin: 0px 15px 15px 0px;
+      float: left;
     }
     .button {
       background-color: #fffb2c;
