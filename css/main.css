@@ -18,19 +18,32 @@
     
     /* div {
       background: rgb(182, 182, 231);
-      border-radius: 45px, 45px, 45px, 45px; */
-    }
+      border-radius: 45px, 45px, 45px, 45px; 
+    } */
     .profile-pic{
       width: 150px;
       height: auto;
       margin: 0px 15px 0px 0px;
     }
-    .dropbutton {
+    .button {
       background-color: #f8b63c;
       color:black;
       padding: 15px;
       font-size: 14px;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+
+    }
+    .button:hover {
+      background-color: #ffa600;
+    }
+    .dropbutton {
+      background-color: #f8b63c;
+      padding: 15px;
+      font-size: 14px;
       cursor: pointer;
+      border: 0px;
     }
   .dropdown { 
     position: relative;
@@ -42,7 +55,6 @@
       background-color: #fff;
       min-width: 170px;
       z-index: 1;
-      border:rgb(0, 0, 0)
     }
     .dropdown-content a{
       color: black;
