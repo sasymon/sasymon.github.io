@@ -39,7 +39,7 @@
       background:#82b3ec;
       width: fit-content;
       height: auto;
-      max-width: 80%;
+      max-width: 70%;
       box-shadow: 3px 3px 5px rgb(63, 61, 61);
       margin: 25px auto;
       padding: 15px 15px 15px 15px;
@@ -101,4 +101,17 @@
     .dropdown:hover .dropbutton {
       background-color: #f8b63c;
     }
-  
+    .red-text {
+      color: red;
+    }
+    .green-text{
+      color: green;
+    }
+    #font-example{
+      font-family: monospace;
+    }
+    .right-image{
+      border:rgb(63, 61, 61);
+      float: right;
+      position: relative;
+    }

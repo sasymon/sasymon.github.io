@@ -20,17 +20,18 @@
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbutton">Tech</button> 
+            <button class="dropbutton">Tech blogs</button> 
             <div class="dropdown-content"> 
               <a href="blog/html-css.html">Classes and ids</a>
           </div>
     </header> 
-    <div class="text-box">
+    <div class="text-box" >
         <h2>What are the best practices associated with using classes vs. ids?</h3>
         <h3>What are classes and ids</h2>
         <p>Classes and ids are selectors. Selectors help define elements (contents of a webpage); think of them as containers that hold content and help tell them what to do.</p>
-        <p>Class and id selectors define a ruleset under a given value, usually in an external stylesheet. We can then give these rulesets to elements on our webpage by attributing the given value to elements. For example we can turn this text green, or assign it a different font.</p>
-        <p>Classes are defined in the stylesheet by a <button>.</button> followed by a value, and ids by a <button>#</button>, followed by a value. </p>
+        <img class="right-image" src="../imgs/classid1.png" alt="class and id ruleset in VSC">
+        <p>Class and id selectors define a ruleset under a given value, usually in an external stylesheet. We can then give these rulesets to elements on our webpage by attributing the given value to elements. For example we can turn <span class="red-text">this text red</span>, <span id="font-example">or assign it a different font.</span></p>
+        <p>Classes are defined in the stylesheet by a <button>.</button> followed by a value, and ids by a <button>#</button> followed by a value. </p>
         <h3>What's the difference between classes and ids?</h3>
         <p>Classes and ids function in much the same manner, the difference lies in their application:
             <ul>
@@ -38,11 +39,11 @@
                 <li>Class selectors can be used on any number of elements.</li>
             </ul>
         </p>
-        <p>Elements are also able to have multiple of either classes or ids, when this is the case and there's conflicting instructions the order in which they are written in the stylesheet matters, the last one taking precedence.</p>
-        <p>When an element has both a class and an id, the id will always take precedence. This allows for what's called specificity; you can get really specific when you apply multiple different classes and ids to the same element!</p>
+        <p>Elements are also able to have multiple of either classes or ids, when this is the case and there's conflicting instructions the order in which they are written in the stylesheet matters, <span class="green-text red-text">the last one taking precedence.</span></p>
+        <img class="right-image" src="../imgs/classid2.png" alt="Green text and red text rules">
+        <p>When an element has both a class and an id, the id will always take precedence when there are conflicting attritbutes. This allows for what's called specificity; you can get really specific when you apply multiple different classes and ids to the same element!</p>
         <h3>When to use a class or an id?</h3>
-        <p>It's generally good practice to use classes when you're wanting to style multiple elements, and id when you're styling a specific element. </p>
-        <p>Addtionally, because ids are unique on a webpage they can also be referred to within the code by using it in a hyperlink.</p>
+        <p>It's generally good practice to use classes when you're wanting to style multiple elements, and id when you're styling a specific element. Addtionally, because ids are unique on a webpage they can also be referred to within code, for exmaple using it in a hyperlink.</p>
     </div>
   </body>
 </main>
