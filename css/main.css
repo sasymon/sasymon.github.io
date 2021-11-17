@@ -10,7 +10,7 @@
       color: rgb(0, 0, 0);
     
     }
-        body {
+    body {
       background:linear-gradient(45deg, #ffa600, #FFF, #BB8FCE)no-repeat;
       
       
@@ -45,12 +45,10 @@
       padding: 15px 15px 15px 15px;
       border-radius: 10px;
       text-align: left;
+  
     }
     .profile-pic{
-      width: 150px;
-      height: auto;
-      margin: 0px 15px 15px 0px;
-      float: left;
+      
     }
     .button {
       background-color: #fffb2c;
@@ -85,6 +83,7 @@
       min-width: 170px;
       z-index: 1;
       box-shadow: 1px 1px 1px 2px;
+    
     }
     .dropdown-content a{
       color: black;
@@ -110,8 +109,14 @@
     #font-example{
       font-family: monospace;
     }
-    .right-image{
-      border:rgb(63, 61, 61);
-      float: right;
-      position: relative;
+    .grid-display {
+      display: grid;
+      grid-template-columns: min-content 1fr;
     }
+    .right-image{
+      margin: 15px 15px 15px 15px;
+      float: right;
+
+    }
+
+    
