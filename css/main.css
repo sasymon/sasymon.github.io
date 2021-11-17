@@ -48,6 +48,9 @@
   
     }
     .profile-pic{
+      width: 150px;
+      height: auto;
+      margin: 0px 15px 0px 0px;
       
     }
     .button {
