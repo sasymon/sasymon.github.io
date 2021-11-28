@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Scott's BLOG</title>
+    <title>Scott's javascript fundamentals</title>
   </head>
   <body>
     <header>
@@ -28,12 +28,92 @@
       </header>
         <div class="text-box">
           <main>
-            <h3></h3>
+            <h2>Javascript fundamentals</h2>
+            <h3> What is javascipt?</h3>
+            <p>If you think of HTML and CSS as the window in a bakery; it's pretty and looks delicious, it's the presentation that is tempting for the passer by offering a feast for the eyes, then javascript is the kitchen; it takes the orders, makes the cakes, decorates the cakes, manages the ingredient stock and methods to make the cakes. Javascript is the workhorse, the behind the scenes engine that makes everything happen.</p>
+            <p>For example with HTML and CSS we can make a pretty looking <button class='prettybutton'>Button</button><span style='color:rgb(153, 91, 21); font-weight: bold'> Clicks: <a>0</a></span> with a counter but without Javascript doesn't do anything. If we attach some javascript we can make it so every time we click this 
+                           
+              <script type="text/javascript">
+
+                var clicks = 0;
+                function counterButton() {
+                    clicks += 1;
+                    document.getElementById("clicks").innerHTML = clicks;
+                };
+                </script>
+                <button class='prettybutton' type="button" onclick="counterButton()">New button</button>
+                <span style='color:rgb(153, 91, 21); font-weight: bold'>Clicks: <a id="clicks">0</a></span>
+              
+                we can make the counter goes up by 1. Pretty neat!</P>
             
-            <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></p> 
+              <h3> How does Javascipt work?</h3>
+            <p>That's a big question, let's break it down.</p>
+            <p>Simply put, Javascript works like a set of instructions. It takes the input (variables), carries out the instructions, and then outputs the results, sounds simple right? Not quite, there's a lot that goes into this to get the right result, so lets get started.</p>
+            <h4>Variables</h4>
+            <figure style='float: right'>
+              <img src="../imgs/chocgat.png" alt='chocolate gateau ingredient list inside an object'>
+              <figcaption>An object within an object.</figcaption>
+            </figure>
+            <p>Variables are basically sets of information, these can range from a set of 1 to... a lot. These variables come in five types; 
+              <ul>
+                <li>Strings - which are strings of text characters denoted by <button>""</button> marks ie "Hello, this is a string"
+                <li>Numbers - which are... numbers,
+                <li>Boolean which are true/false statements,
+                <li>Arrays, 
+                <li>and Objects. </p>
+              </ul>
+              
+            <h4>Arrays and objects</h4>
+            <p>Objects and arrays are variables that contain a collection of information rather than just one point of data like strings, numbers, and boolean variables.</p>
+            <p>The difference between arrays and objects is that arrays contain one collection of information, where Objects contain multiple collections under a key and value system (key: value) . Confused? Yeah me too, so here's a handy image to help us out. Here we have a variable called chocolateGateau which is an object, inside the object is a list of the ingredients(keys) and the required amounts (values).</p> 
+            <p>An important difference between arrays and objects is how they are called upon; arrays are called upon using a zero index - arrays start counting at <button>0</button>, where objects use a dot notation to indicate children objects instead.</p>
+            <figure style="float:left">
+              <img src="../imgs/arrayex.png" alt='example of an array containing number, boolean, and string variables'>
+              <figcaption>An array containing a number, boolean, and a string variable</figcaption>
+            </figure>
+    
+
+            <p>Here we have a basic array, which can contain other different types of variables (including objects!), so to call upon 'carrot' in my arrayExample array I'd use <span style="font-weight:bold">arrayExample[2]</span>.</p> 
+            <p>To call upon the chocolateFlakes key value in my object variable I'd use <span style="font-weight:bold">chocolateGateau.butterCream.chocolateFlakes</span> stopping at the key for the value I want. And yes, you can have arrays inside of objects, and objects inside of arrays and all the way down until it's nothing but arrays and objects all the way down.</p>
+            <figure style='float: right'>
+              <img src="../imgs/domtree.gif" alt='DOM tree, like a family tree'>
+                <figcaption>Simplified DOM tree</figcaption>
+              </figure>
+            <h4>The DOM</h4>
+            <p>The DOM, or Document Object Model. Everything on a website is an object which can be accessed and manipulated.</p>
             
+            <p>The DOM can be visually represented by a tree diagram; each object(also called a node) is a child of another object which can help us track them down for our needs.</p>
+            
+            <p class='findAnObject'>It's good practice when using Javascript to use classes and ids to help find the specific objects you want to work with. Remember when I talked about selectors, classes and ids? No? Well then go read <a href='html-css.html'>this</a>.</p>
+          
+            <h4>Functions</h4>
+            <p>Functions are used for code (instructions) that we want to repeat. Not only is this efficient, we have to write less code, but we can also call on it with different variables attached.</p>
+            <p>It's important to also note that declaring (writing) functions on their own won't do anything, they must be called upon to happen, this also means we can call on them multiple times.</p>
+            <figure style="float: right">
+              <img src="../imgs/cakeyesno.png" alt='Is there cake? :D or D:'>
+              <figcaption>if there is cake, enjoy. If there is none, cry.</figcaption>
+            </figure>
+            <h4>Control flow</h4>
+            <p>By default javascript runs from top to bottom in the order they were written without stopping, but fairly often the code will give instructions to change course, go back, skip or just out right stop, this is called Control flow, the sequence order of the code.</p>
+            
+            <p>Often this achieved with <span style= "font-weight: strong">if/else</span> statements that work exactly how you'd think; if <x> is true then do this, if not then do that.</p>
+              
+            <h4>Loops</h4>
+            <p>Loops are a special actions that repeat under certain circumstances, a way to manipulate control flow, for as many times as instructed, and until certain conditions are met. Loops are very versatile and come in many forms, but all have a basic starting structure.</p>
+            <figure style="float: left; margin: 5px 25px 5px 0px">
+            <img src="../imgs/eatallcake.png" alt='Someone is greedy for cake'>
+            <figcaption>Eat all the cake!</figcaption>
+            </figure>
+            <p>There are mainly four types of loops;</p>
+              <ul>
+                <li><span style= "font-weight:bold">for</span> - loops through a block of code a number of times</li>
+                <li><span style= "font-weight:bold">for... in</span> - loops through the propeties of an onject</li>
+                <li><span style= "font-weight:bold">for... of</span> - loops through the values of the object</li>
+                <li><span style= "font-weight:bold">while</span> - loops through a block of code while a specific condition is true</li>
+              </ul>
+          <p>We're getting a bit too deep for fundamentals now so we'll stop here. Hopefully you've gained a basic understanding of what Javascript is, how it's used, and what it does. Thanks for reading!
+          
           </main>
+
    </body>
 </html>
