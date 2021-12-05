@@ -122,27 +122,29 @@
 
     }
     .prettybutton {
-      padding: 10px 10px;
-  font-size: 10px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: rgb(7, 1, 1);
-  background-color: #eb77e1;
-  border: none;
-  border-radius: 3px;
-  box-shadow: 2px 2px rgb(48, 46, 46);
+      padding: 7px 7px;
+      margin: 3px 3px;
+      font-size: 10px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: rgb(7, 1, 1);
+      background-color: #eb77e1;
+      border: none;
+      border-radius: 3px;
+      box-shadow: 2px 2px rgb(48, 46, 46)
+      ;
     }
     
-    figure {
-      display: inline-block;
-      border: 1px;
-      margin: 10px; 
+  figure {
+    display: inline-block;
+    border: 1px;
+    margin: 10px; 
     }
   figure img {
-      vertical-align: top;
+    vertical-align: top;
   }
   figure figcaption {
     font-size: 12px;
-      text-align: center;
+    text-align: center;
   }
