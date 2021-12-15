@@ -36,6 +36,32 @@ function whackDaMole (){
 audio.play();
 console.log('MOLE')
 }
+//Create a new element to store the timer
+let sec = 10
+let timerPlaceholder = document.createElement('p')
+let timerDisplay = document.createTextNode('Time left: ' + sec + ' sec')
+timerPlaceholder.appendChild(timerDisplay)
+document.body.appendChild(timerPlaceholder)
+timerPlaceholder.id = "timer"
+timerPlaceholder.style.textAlign = 'center'
+// Create the timer that stops at 10
+// Display an alert saying time stopped and score
+function countdown() {
+  let timer = setInterval(function (){
+    sec--
+    document.getElementById('timer').innerHTML = 'Time left: ' + sec + ' sec'
+    if (sec === 0){
+      clearInterval(timer)
+      setTimeout(function () {
+        scoreAlert()
+      }, 1)
+    }
+    }, 1000)
+  }
+
+  function scoreAlert(){
+    alert ('Time out. You scored ' + counterNum +'!')
+  }
 
 //HELPING MEI WITH HER CODE :D
 
