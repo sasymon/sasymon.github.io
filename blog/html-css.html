@@ -5,19 +5,19 @@
         <link rel="stylesheet" href="../css/main.css">
         <title>Scott's HTML and CSS lesson</title>
     </head>
-<body>
-    <header>
-        <img class="header-pic" src="../imgs/scottdisapproval.png" alt="Scott giving a look of disapproval for your shenanigans">
-        <h1>Scott's Foundations blog</h1>
-        <a href="../index.html" class="button">Home</a> 
-             <div class="dropdown">
+    <body>
+        <header>
+            <img class="header-pic" src="../imgs/scottdisapproval.png" alt="Scott giving a look of disapproval for your shenanigans">
+            <h1>Scott's Foundations blog</h1>
+            <a href="../index.html" class="button">Home</a> 
+            <div class="dropdown">
                 <button class="dropbutton">Core blogs</button> 
-                    <div class="dropdown-content"> 
-                        <a href="identity-values.html">Identity, values, and strengths</a>
-                        <a href="emotional-intelligence.html">Emotional intelligence</a>
-                        <a href="neuroplasticity.html">Neuroplasticity and growth mindset</a>
-                        <a href="reflections.html">Core curriculum reflections</a>  
-                     </div>
+                <div class="dropdown-content"> 
+                    <a href="identity-values.html">Identity, values, and strengths</a>
+                    <a href="emotional-intelligence.html">Emotional intelligence</a>
+                    <a href="neuroplasticity.html">Neuroplasticity and growth mindset</a>
+                    <a href="reflections.html">Core curriculum reflections</a>  
+                </div>
             </div>
             <div class="dropdown">
                 <button class="dropbutton">Tech blogs</button> 
@@ -25,58 +25,68 @@
                     <a href="html-css.html">Classes and ids</a>
                     <a href="javascript-dom.html">Javascript fundamentals</a>
                     <a href="problem-solving.html">Problem solving</a>
-                 </div>
+                    </div>
             </div>
             <div class="dropdown">
                 <button class="dropbutton">Learning plans</button> 
-                  <div class="dropdown-content"> 
+                <div class="dropdown-content"> 
                     <a href="learning-plan.html">Learning plan</a>
                     <a href="bootcamp-learning-plan.html">Learning plan 2: electric boogaloo</a>
-                  </div>
-              </div> 
-              <div class="dropdown">
+                </div>
+            </div> 
+            <div class="dropdown">
                 <button class="dropbutton">Carnival games</button> 
-                  <div class="dropdown-content"> 
+                <div class="dropdown-content"> 
                     <a href="../carnival/dress-the-clown/dress-the-clown.html" target=”_blank”>Dress the clown</a>
                     <a href="../carnival/inflate-the-unicorn/inflate-the-unicorn.html" target=”_blank”>Inflate the unicorn</a>
                     <a href="../carnival/whack-a-mole/whack-a-mole.html" target=”_blank”>Whack-a-mole</a>
                     <a href="../carnival/minesweeper/minesweeper.html" target=”_blank”>Minesweeper</a>
-                  </div>
-              </div>
-    </header> 
-        <div class="text-box">
-            <div>
-                <img class="right-image" src="../imgs/classid1.png" alt="class and id style sheet ruleset">
-                <main>
-                    <h2>What are the best practices associated with using classes vs. ids?</h2>
-                    <h3>What are classes and ids</h3>
-                    <p>Classes and ids are selectors. Selectors help define elements (contents of a webpage); think of them as containers that hold content and help tell them what to do.</p>
-                    <p>Class and id selectors define a ruleset under a given value, usually in an external stylesheet. We can then give these rulesets to elements on our webpage by attributing the given value to elements. For example we can turn <span class="red-text">this text red</span>, <span id="font-example">or assign it a different font.</span></p>
-                    <p>Classes are defined in the stylesheet by a <button>.</button> followed by a value, and ids by a <button>#</button> followed by a value. </p>
-                
-                    <figure>
-                        <img class="right-image" src="../imgs/classid2.png" alt="Green text and red text rules">
-                        <figcaption>greenText comes after redText so it takes precedence</figcaption>
-                    </figure>
-                    
-                        <h3>What's the difference between classes and ids?</h3>
-                        <p>Classes and ids function in much the same manner, the difference lies in their application:
-                            <ul>
-                                <li>id selectors only can be used on ONE element on a webpage.</li>
-                                <li>Class selectors can be used on any number of elements.</li>
-                            </ul>
-                        </p>
-                        <p>Elements are also able to have multiple of either classes or ids, when this is the case and there's conflicting instructions the order in which they are written in the stylesheet matters, <span class="green-text red-text">the last one takes precedence.</span></p>
-                        <p>When an element has both a class and an id, the id will always take precedence when there are conflicting attritbutes. This allows for what's called specificity; you can get really specific when you apply multiple different classes and ids to the same element!</p>
-                </main>
-                    <figure>
-                    <img class="right-image" src="../imgs/classid4.png" alt="Hyperlink to #font-example"> 
-                    <figcaption></figcaption> 
-                    </figure>
-                    <h3>When to use a class or an id?</h3>
-                    <p>It's generally good practice to use classes when you're wanting to style multiple elements, and id when you're styling a specific element. Addtionally, because ids are unique on a webpage they can also be referred to within code, for exmaple using it in a <a href="html-css.html#font-example">hyperlink.</a></p>
-            </main>
-         </div>   
-     </div>
-</body>
+                </div>
+            </div>
+        </header> 
+        <main class="text-box">
+            <img class="right-image" src="../imgs/classid1.png" alt="class and id style sheet ruleset">
+            <h2>What are the best practices associated with using classes vs. ids?</h2>
+            <h3>What are classes and ids</h3>
+            <p>
+                Classes and ids are selectors. Selectors help define elements (contents of a webpage); think of them as containers that hold content and help tell them what to do.
+            </p>
+            <p>Class and id selectors define a ruleset under a given value, usually in an external stylesheet. We can then give these rulesets to elements on our webpage by a
+                ttributing the given value to elements. For example we can turn <span class="red-text">this text red</span>, <span id="font-example">or assign it a different 
+                    font.</span>
+                </p>
+            <p>
+                Classes are defined in the stylesheet by a <button>.</button> followed by a value, and ids by a <button>#</button> followed by a value. 
+            </p>
+            <figure>
+                <img class="right-image" src="../imgs/classid2.png" alt="Green text and red text rules">
+                <figcaption>greenText comes after redText so it takes precedence</figcaption>
+            </figure>
+            
+            <h3>What's the difference between classes and ids?</h3>
+            <p>
+                Classes and ids function in much the same manner, the difference lies in their application:
+                <ul>
+                    <li>id selectors only can be used on ONE element on a webpage.</li>
+                    <li>Class selectors can be used on any number of elements.</li>
+                </ul>
+            </p>
+            <p>Elements are also able to have multiple of either classes or ids, when this is the case and there's conflicting instructions the order in which they are written 
+                in the stylesheet matters, <span class="green-text red-text">the last one takes precedence.</span>
+            </p>
+            <p>
+                When an element has both a class and an id, the id will always take precedence when there are conflicting attritbutes. This allows for what's called specificity; 
+                you can get really specific when you apply multiple different classes and ids to the same element!
+            </p>
+
+            <figure>
+                <img class="right-image" src="../imgs/classid4.png" alt="Hyperlink to #font-example"> 
+                <figcaption></figcaption> 
+            </figure>
+            <h3>When to use a class or an id?</h3>
+            <p>It's generally good practice to use classes when you're wanting to style multiple elements, and id when you're styling a specific element. Addtionally, because ids 
+                are unique on a webpage they can also be referred to within code, for exmaple using it in a <a href="html-css.html#font-example">hyperlink.</a>
+            </p>
+        </main>
+    </body>
 </html>

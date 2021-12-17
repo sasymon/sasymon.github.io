@@ -9,146 +9,166 @@
     <header>
       <img class="header-pic" src="../imgs/scottdisapproval.png" alt="Scott giving a look of disapproval for your shenanigans">
       <h1>Scott's Foundations blog</h1>
-       <a href="../index.html" class="button">Home</a> 
+      <a href="../index.html" class="button">Home</a> 
         <div class="dropdown">
-            <button class="dropbutton">Core blogs</button> 
-            <div class="dropdown-content"> 
-              <a href="identity-values.html">Identity, values, and strengths</a>
-              <a href="emotional-intelligence.html">Emotional intelligence</a>
-              <a href="neuroplasticity.html">Neuroplasticity and growth mindset</a>
-              <a href="reflections.html">Core curriculum reflections</a>  
-              </div>
-            </div>
-              <div class="dropdown">
-                <button class="dropbutton">Tech blogs</button> 
-                  <div class="dropdown-content"> 
-                  <a href="html-css.html">Classes and ids</a>
-                  <a href="javascript-dom.html">Javascript fundamentals</a>
-                  <a href="problem-solving.html">Problem solving</a>
-                  </div>
-              </div>
-              <div class="dropdown">
-                <button class="dropbutton">Learning plans</button> 
-                  <div class="dropdown-content"> 
-                    <a href="learning-plan.html">Learning plan</a>
-                    <a href="bootcamp-learning-plan.html">Learning plan 2: electric boogaloo</a>
-                  </div>
-              </div>
-              <div class="dropdown">
-                <button class="dropbutton">Carnival games</button> 
-                  <div class="dropdown-content"> 
-                    <a href="../carnival/dress-the-clown/dress-the-clown.html" target=”_blank”>Dress the clown</a>
-                    <a href="../carnival/inflate-the-unicorn/inflate-the-unicorn.html" target=”_blank”>Inflate the unicorn</a>
-                    <a href="../carnival/whack-a-mole/whack-a-mole.html" target=”_blank”>Whack-a-mole</a>
-                    <a href="../carnival/minesweeper/minesweeper.html" target=”_blank”>Minesweeper</a>
-                  </div>
-              </div>
+          <button class="dropbutton">Core blogs</button> 
+          <div class="dropdown-content"> 
+            <a href="identity-values.html">Identity, values, and strengths</a>
+            <a href="emotional-intelligence.html">Emotional intelligence</a>
+            <a href="neuroplasticity.html">Neuroplasticity and growth mindset</a>
+            <a href="reflections.html">Core curriculum reflections</a>  
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbutton">Tech blogs</button> 
+          <div class="dropdown-content"> 
+            <a href="html-css.html">Classes and ids</a>
+            <a href="javascript-dom.html">Javascript fundamentals</a>
+            <a href="problem-solving.html">Problem solving</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbutton">Learning plans</button> 
+          <div class="dropdown-content"> 
+            <a href="learning-plan.html">Learning plan</a>
+            <a href="bootcamp-learning-plan.html">Learning plan 2: electric boogaloo</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbutton">Carnival games</button> 
+          <div class="dropdown-content"> 
+            <a href="../carnival/dress-the-clown/dress-the-clown.html" target=”_blank”>Dress the clown</a>
+            <a href="../carnival/inflate-the-unicorn/inflate-the-unicorn.html" target=”_blank”>Inflate the unicorn</a>
+            <a href="../carnival/whack-a-mole/whack-a-mole.html" target=”_blank”>Whack-a-mole</a>
+            <a href="../carnival/minesweeper/minesweeper.html" target=”_blank”>Minesweeper</a>
+          </div>
+        </div>
       </header>
-        <div class="text-box">
-          <main>
-            <h2>Javascript fundamentals</h2>
-            <h3> What is javascipt?</h3>
-            <p>If you compare HTML and CSS with the bakery window and display; it has lots of delicious things to show off, presentating an 
-              array of tempting treats for the passerby; a feast for the eyes, then javascript is the kitchen; recieves the orders, bakes the 
-              cakes, decorates the cakes, manages the ingredient stock, and methods to make the cakes. Javascript is the workhorse, the behind 
-              the scenes engine that makes everything happen.
-            </p>
-            <p>For example with HTML and CSS we can make a pretty looking <button class='prettybutton'>Button</button><span style='color:rgb(153, 91, 21); font-weight: bold'>
-               Clicks: <a>0</a></span> with a counter but without Javascript doesn't do anything. If we attach some javascript we can make it so every time we click this 
-                           
-                <script type="text/javascript">
+      <div class="text-box">
+        <main>
+          <h2>Javascript fundamentals</h2>
+          <h3> What is javascipt?</h3>
+          <p>If you compare HTML and CSS with the bakery window and display; it has lots of delicious things to show off, presentating an 
+            array of tempting treats for the passerby; a feast for the eyes, then javascript is the kitchen; recieves the orders, bakes the 
+            cakes, decorates the cakes, manages the ingredient stock, and methods to make the cakes. Javascript is the workhorse, the behind 
+            the scenes engine that makes everything happen.
+          </p>
+          <p>For example with HTML and CSS we can make a pretty looking <button class='prettybutton'>Button</button><span style='color:rgb(153, 91, 21); font-weight: bold'>
+              Clicks: <a>0</a></span> with a counter but without Javascript doesn't do anything. If we attach some javascript we can make it so every time we click this 
+                          
+              <script type="text/javascript">
 
                 var clicks = 0;
                 function counterButton() {
                     clicks += 1;
                     document.getElementById("clicks").innerHTML = clicks;
                 };
-                </script>
-                <button class='prettybutton' type="button" onclick="counterButton()">New button</button>
-                <span style='color:rgb(153, 91, 21); font-weight: bold'>Clicks: <a id="clicks">0</a></span>
-              
-                we can make the counter go up by 1. Pretty neat!
-              </p>
+              </script>
+              <button class='prettybutton' type="button" onclick="counterButton()">New button</button>
+              <span style='color:rgb(153, 91, 21); font-weight: bold'>Clicks: <a id="clicks">0</a></span>
             
-              <h3> How does Javascipt work?</h3>
-            <p>That's a big question, let's break it down.</p>
-            <p>Simply put, Javascript works like a set of instructions. It takes the input (variables), carries out it's instructions, and then outputs the results. 
-              Sounds simple right? Not quite, there's a lot that goes into this to get the right result, so lets get started.
+              we can make the counter go up by 1. Pretty neat!
             </p>
-            <h4>Variables</h4>
-            <figure style='float: right'>
-              <img src="../imgs/chocgat.png" alt='chocolate gateau ingredient list inside an object'>
-              <figcaption>An object within an object.</figcaption>
-            </figure>
-            <p>Variables are basically sets of information, these can range from a set of 1 to... a lot. These variables come in five types, the first three are 
-              relative simple but the last two can get pretty complicated; 
-              <ul>
-                <li>Strings - which are strings of text characters denoted by <button>""</button> marks ie "Hello, this is a string"
-                <li>Numbers - which are... numbers,
-                <li>Boolean - which are true/false statements,
-                <li>Arrays, 
-                <li>and Objects. 
-              </ul>
-              Arrays and objects need a bit more explanation.
-            </p>
-            <h4>Arrays and objects</h4>
-            <p>Objects and arrays are variables that contain a collection of information rather than just one point of data like strings, numbers, and boolean variables.</p>
-            <p>The difference between arrays and objects is that arrays contain one collection of information, where Objects contain multiple collections under a key and 
-              value system (key: value). Confused? Yeah me too, so here's a few handy images to help us out. Here to the right we have a variable called chocolateGateau which 
-              is an object, inside the object is a list of the ingredients(keys) and the required amounts (values), we have two collections of variables; the ingredients, and 
-              the amount of each we need.
-            </p> 
-            <p>An important difference between arrays and objects is how they are called upon; arrays are called upon using a zero index contained with <button>[ ]</button> 
-              brackets- arrays start counting at <button>0</button>, where objects use a dot notation to indicate children objects instead; each object is separated by a 
-              <button>.</button> to denote that the next variable is a child object of the previous object.
-            </p>
-            <figure style="float:left">
-              <img src="../imgs/arrayex.png" alt='example of an array containing number, boolean, and string variables'>
-              <figcaption>An array containing a number, boolean, and a string variable</figcaption>
-            </figure>
-    
-
-            <p>Here we have a basic array, which can contain other different types of variables (including objects!), so to call upon 'carrot' in my arrayExample array I'd use <span style="font-weight:bold">arrayExample[2]</span>.</p> 
-            <p>To call upon the chocolateFlakes key value in my object variable I'd use <span style="font-weight:bold">chocolateGateau.butterCream.chocolateFlakes</span> stopping at the key for the value I want. And yes, you can have arrays inside of objects, and objects inside of arrays and all the way down until it's nothing but arrays and objects all the way down.</p>
-            <figure style='float: right'>
-              <img src="../imgs/domtree.gif" alt='DOM tree, like a family tree'>
-                <figcaption>Simplified DOM tree</figcaption>
-              </figure>
-            <h4>The DOM</h4>
-            <p>The DOM, or Document Object Model. Everything on a website is an object which can be accessed and manipulated.</p>
-            
-            <p>The DOM can be visually represented by a tree diagram; each object(also called a node) is a child of another object which can help us track them down for our needs.</p>
-            
-            <p class='findAnObject'>It's good practice when using Javascript to use classes and ids to help find the specific objects you want to work with. Remember when I talked about selectors, classes and ids? No? Well then go read <a href='html-css.html'>this</a>.</p>
           
-            <h4>Functions</h4>
-            <p>Functions are used for code (instructions) that we want to repeat. Not only is this efficient, we have to write less code, but we can also call on it with different variables attached.</p>
-            <p>It's important to also note that declaring (writing) functions on their own won't do anything, they must be called upon to happen, this also means we can call on them multiple times.</p>
-            <figure style="float: right">
-              <img src="../imgs/cakeyesno.png" alt='Is there cake? :D or D:'>
-              <figcaption>if there is cake, enjoy. If there is none, cry.</figcaption>
-            </figure>
-            <h4>Control flow</h4>
-            <p>By default javascript runs from top to bottom in the order they were written without stopping, but fairly often the code will give instructions to change course, go back, skip or just out right stop, this is called Control flow, the sequence order of the code.</p>
-            
-            <p>Often this achieved with <span style= "font-weight: strong">if/else</span> statements that work exactly how you'd think; if <x> is true then do this, if not then do that.</p>
-              
-            <h4>Loops</h4>
-            <p>Loops are a special action that repeat under certain circumstances, a way to manipulate control flow, for as many times as instructed, and until certain conditions are met. Loops are very versatile and come in many forms, but all have a basic starting structure.</p>
-            <figure style="float: left; margin: 5px 25px 5px 0px">
-            <img src="../imgs/eatallcake.png" alt='Someone is greedy for cake'>
-            <figcaption>Eat all the cake!</figcaption>
-            </figure>
-            <p>There are mainly four types of loops;</p>
-              <ul>
-                <li><span style= "font-weight:bold">for</span> - loops through a block of code a number of times</li>
-                <li><span style= "font-weight:bold">for... in</span> - loops through the propeties of an onject</li>
-                <li><span style= "font-weight:bold">for... of</span> - loops through the values of the object</li>
-                <li><span style= "font-weight:bold">while</span> - loops through a block of code while a specific condition is true</li>
-              </ul>
-          <p>We're getting a bit too deep for fundamentals now so we'll stop here. Hopefully you've gained a basic understanding of what Javascript is, how it's used, and what it does. Thanks for reading!
-          
-          </main>
-
+          <h3> How does Javascipt work?</h3>
+          <p>
+            That's a big question, let's break it down.
+          </p>
+          <p>Simply put, Javascript works like a set of instructions. It takes the input (variables), carries out it's instructions, and then outputs the results. 
+            Sounds simple right? Not quite, there's a lot that goes into this to get the right result, so lets get started.
+          </p>
+          <h4>Variables</h4>
+          <figure style='float: right'>
+            <img src="../imgs/chocgat.png" alt='chocolate gateau ingredient list inside an object'>
+            <figcaption>An object within an object.</figcaption>
+          </figure>
+          <p>Variables are basically sets of information, these can range from a set of 1 to... a lot. These variables come in five types, the first three are 
+            relative simple but the last two can get pretty complicated; 
+            <ul>
+              <li>Strings - which are strings of text characters denoted by <button>""</button> marks ie "Hello, this is a string"
+              <li>Numbers - which are... numbers,
+              <li>Boolean - which are true/false statements,
+              <li>Arrays, 
+              <li>and Objects. 
+            </ul>
+            Arrays and objects need a bit more explanation.
+          </p>
+        <h4>Arrays and objects</h4>
+        <p>
+          Objects and arrays are variables that contain a collection of information rather than just one point of data like strings, numbers, and boolean variables.
+        </p>
+        <p>The difference between arrays and objects is that arrays contain one collection of information, where Objects contain multiple collections under a key and 
+          value system (key: value). Confused? Yeah me too, so here's a few handy images to help us out. Here to the right we have a variable called chocolateGateau which 
+          is an object, inside the object is a list of the ingredients(keys) and the required amounts (values), we have two collections of variables; the ingredients, and 
+          the amount of each we need.
+        </p> 
+        <p>An important difference between arrays and objects is how they are called upon; arrays are called upon using a zero index contained with <button>[ ]</button> 
+          brackets- arrays start counting at <button>0</button>, where objects use a dot notation to indicate children objects instead; each object is separated by a 
+          <button>.</button> to denote that the next variable is a child object of the previous object.
+        </p>
+        <figure style="float:left">
+          <img src="../imgs/arrayex.png" alt='example of an array containing number, boolean, and string variables'>
+          <figcaption>An array containing a number, boolean, and a string variable</figcaption>
+        </figure>
+        <p>Here we have a basic array, which can contain other different types of variables (including objects!), so to call upon 'carrot' in my arrayExample array I'd use 
+          <strong>arrayExample[2]</strong>.
+        </p> 
+        <p>To call upon the chocolateFlakes key value in my object variable I'd use <span style="font-weight:bold">chocolateGateau.butterCream.chocolateFlakes</span> stopping 
+          at the key for the value I want. And yes, you can have arrays inside of objects, and objects inside of arrays and all the way down until it's nothing but arrays and 
+          objects all the way down.
+        </p>
+        <figure style='float: right'>
+          <img src="../imgs/domtree.gif" alt='DOM tree, like a family tree'>
+            <figcaption>Simplified DOM tree</figcaption>
+          </figure>
+        <h4>The DOM</h4>
+        <p>
+          The DOM, or Document Object Model. Everything on a website is an object which can be accessed and manipulated.
+        </p>
+        <p>
+          The DOM can be visually represented by a tree diagram; each object(also called a node) is a child of another object which can help us track them down for our needs.
+        </p>        
+        <p class='findAnObject'>It's good practice when using Javascript to use classes and ids to help find the specific objects you want to work with. Remember when I talked 
+          about selectors, classes and ids? No? Well then go read <a href='html-css.html'>this</a>.
+        </p>
+        <h4>Functions</h4>
+        <p>Functions are used for code (instructions) that we want to repeat. Not only is this efficient, we have to write less code, but we can also call on it with different 
+          variables attached.
+        </p>
+        <p>It's important to also note that declaring (writing) functions on their own won't do anything, they must be called upon to happen, this also means we can call on them 
+          multiple times.
+        </p>
+        <figure style="float: right">
+          <img src="../imgs/cakeyesno.png" alt='Is there cake? :D or D:'>
+          <figcaption>if there is cake, enjoy. If there is none, cry.</figcaption>
+        </figure>
+        <h4>Control flow</h4>
+        <p>By default javascript runs from top to bottom in the order they were written without stopping, but fairly often the code will give instructions to change course, go back, 
+          skip or just out right stop, this is called Control flow, the sequence order of the code.
+        </p>
+        <p>
+          Often this achieved with <span style= "font-weight: strong">if/else</span> statements that work exactly how you'd think; if <x> is true then do this, if not then do that.
+        </p> 
+        <h4>Loops</h4>
+        <p>Loops are a special action that repeat under certain circumstances, a way to manipulate control flow, for as many times as instructed, and until certain conditions are met. 
+          Loops are very versatile and come in many forms, but all have a basic starting structure.
+        </p>
+        <figure style="float: left; margin: 5px 25px 5px 0px">
+          <img src="../imgs/eatallcake.png" alt='Someone is greedy for cake'>
+          <figcaption>Eat all the cake!</figcaption>
+        </figure>
+        <p>
+          There are mainly four types of loops;
+        </p>
+        <ul>
+          <li><span style= "font-weight:bold">for</span> - loops through a block of code a number of times</li>
+          <li><span style= "font-weight:bold">for... in</span> - loops through the propeties of an onject</li>
+          <li><span style= "font-weight:bold">for... of</span> - loops through the values of the object</li>
+          <li><span style= "font-weight:bold">while</span> - loops through a block of code while a specific condition is true</li>
+        </ul>
+      <p>We're getting a bit too deep for fundamentals now so we'll stop here. Hopefully you've gained a basic understanding of what Javascript is, how it's used, and what it does. 
+        Thanks for reading!
+      </p>
+    </main>
    </body>
 </html>
