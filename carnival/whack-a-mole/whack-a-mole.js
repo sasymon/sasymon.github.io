@@ -34,6 +34,18 @@ function whackDaMole (){
 // plays the whack audio file
   var audio = new Audio('./whack-audio.wav');
 audio.play();
+
+counterNum++
+document.getElementById('counter').innerHTML = 'Moles whacked: ' + counterNum
+
+if (counterNum === 1){
+  countdown()
+} else if (sec == 0){
+  sec = 10
+  document.getElementById('timer').innerHTML = 'Time left: ' + sec + ' sec'
+  counterNum = 0
+  document.getElementById('counter').innerHTML = 'Moles whacked: ' + counterNum
+}
 console.log('MOLE')
 }
 //Create a new element to store the timer
@@ -62,6 +74,16 @@ function countdown() {
   function scoreAlert(){
     alert ('Time out. You scored ' + counterNum +'!')
   }
+
+  // Create moles whacked counter
+  let counterNum = 0
+  let counterTracker = document.createElement('p')
+  let counterText = document.createTextNode('Moles whacked: ' + counterNum)
+  counterTracker.appendChild(counterText)
+  document.body.appendChild(counterTracker)
+  counterTracker.id = 'counter'
+  counterTracker.style.textAlign = 'center'
+
 
 //HELPING MEI WITH HER CODE :D
 
