@@ -1,150 +1,171 @@
-
-    html {
-      font-family: Arial;
-      height: fit-content;
-      min-height: 100%;
-    
-    }
-    h1 {
-      text-align: center;
-      color: rgb(0, 0, 0);
-    
-    }
-    body {
-      background:linear-gradient(45deg, #ffa600, #FFF, #BB8FCE)no-repeat;
-      
-      
-    
-    }
-    header {
-      background:#82b3ec;
-      width: 60%;
-      max-width: 80%;
-      box-shadow: 3px 3px 5px rgb(63, 61, 61);
-      margin: 25px auto;
-      padding: 15px;
-      border-radius: 10px;
-    
-    }
-    .header-pic{
-      border-radius: 50%;
-      width: 80px;
-      height: auto;
-      margin: 10px 10px 10px 0px;
-      float: left;   
-      
-    }
-
-    .text-box {
-      background:#82b3ec;
-      width: fit-content;
-      height: auto;
-      max-width: 70%;
-      box-shadow: 3px 3px 5px rgb(63, 61, 61);
-      margin: 25px auto;
-      padding: 15px 15px 15px 15px;
-      border-radius: 10px;
-      text-align: left;
+html {
+  font-family: Arial;
+  height: fit-content;
+  min-height: 100%;
   
-    }
-    .profile-pic {
-      width: 150px;
-      height: auto;
-      margin: 0px 15px 10px 15px;
-           
-    }
-    .button {
-      background-color: #fffb2c;
-      color:black;
-      padding: 15px;
-      font-size: 14px;
-      display: inline-block;
-      text-align: center;
-      text-decoration: none;
-      box-shadow: 1px 1px 1px 2px;
+}
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  
+}
+body {
+  background:linear-gradient(45deg, #ffa600, #FFF, #BB8FCE)no-repeat;
+}
+header {
+  background:#82b3ec;
+  width: 60%;
+  max-width: 80%;
+  box-shadow: 3px 3px 5px rgb(63, 61, 61);
+  margin: 25px auto;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+.header-pic{
+  border-radius: 50%;
+  width: 80px;
+  height: auto;
+  margin: 10px 10px 10px 0px;
+  float: left;   
+  
+}
 
-    }
-    .button:hover {
-      background-color: #f8b63c;
-    }
-    .dropbutton {
-      background-color: #fffb2c;
-      padding: 15px;
-      font-size: 14px;
-      cursor: pointer;
-      border: 0px;
-      box-shadow: 1px 1px 1px 2px;
-    }
-  .dropdown { 
-    position: relative;
-    display: inline-block;
-  }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #fffb2c;
-      min-width: 170px;
-      z-index: 1;
-      box-shadow: 1px 1px 1px 2px;
-    
-    }
-    .dropdown-content a{
-      color: black;
-      padding: 10px 15px;
-      display: block;
-      text-decoration: none;
-    }
-    .dropdown-content a:hover{
-      background-color: #f8b63c;
-    }
-    .dropdown:hover .dropdown-content{
-      display: block;
-    }
-    .dropdown:hover .dropbutton {
-      background-color: #f8b63c;
-    }
-    .red-text {
-      color: red;
-    }
-    .green-text{
-      color: green;
-    }
-    #font-example{
-      font-family: monospace;
-    }
-    .grid-display {
-      display: grid;
-      grid-template-columns: min-content 1fr;
-    }
-    .right-image{
-      margin: 15px 15px 15px 15px;
-      float: right;
+.text-box {
+  background:#82b3ec;
+  width: fit-content;
+  height: auto;
+  max-width: 70%;
+  box-shadow: 3px 3px 5px rgb(63, 61, 61);
+  margin: 25px auto;
+  padding: 15px 15px 15px 15px;
+  border-radius: 10px;
+  text-align: left;
+  
+}
+.profile-pic {
+  width: 150px;
+  height: auto;
+  margin: 0px 15px 10px 15px;
+  
+}
+.button {
+  background-color: #fffb2c;
+  color:black;
+  padding: 15px;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 1px 1px 1px 2px;
+  
+}
+.button:hover {
+  background-color: #f8b63c;
+}
+.dropbutton {
+  background-color: #fffb2c;
+  padding: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 0px;
+  box-shadow: 1px 1px 1px 2px;
+}
+.dropdown { 
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fffb2c;
+  min-width: 170px;
+  z-index: 1;
+  box-shadow: 1px 1px 1px 2px;
+  
+}
+.dropdown-content a{
+  color: black;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+.dropdown-content a:hover{
+  background-color: #f8b63c;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+.dropdown:hover .dropbutton {
+  background-color: #f8b63c;
+}
+.red-text {
+  color: red;
+}
+.green-text{
+  color: green;
+}
+#font-example{
+  font-family: monospace;
+}
+.grid-display {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+.right-image{
+  margin: 15px 15px 15px 15px;
+  float: right;
+  
+}
+.prettybutton {
+  padding: 7px 7px;
+  margin: 3px 3px;
+  font-size: 10px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(7, 1, 1);
+  background-color: #eb77e1;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2px 2px rgb(48, 46, 46)
+}
 
-    }
-    .prettybutton {
-      padding: 7px 7px;
-      margin: 3px 3px;
-      font-size: 10px;
-      text-align: center;
-      cursor: pointer;
-      outline: none;
-      color: rgb(7, 1, 1);
-      background-color: #eb77e1;
-      border: none;
-      border-radius: 3px;
-      box-shadow: 2px 2px rgb(48, 46, 46)
-      ;
-    }
-    
-  figure {
-    display: inline-block;
-    border: 1px;
-    margin: 10px; 
-    }
-  figure img {
-    vertical-align: top;
+figure {
+  display: inline-block;
+  border: 1px;
+  margin: 10px; 
+}
+figure img {
+  vertical-align: top;
   }
-  figure figcaption {
-    font-size: 12px;
-    text-align: center;
+figure figcaption {
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  body{
+  background:linear-gradient(45deg, #ffa600, #FFF, #BB8FCE)no-repeat;
   }
+}
+@media (orientation: portrait) and (max-width: 768px) {
+  body {
+    background:linear-gradient(45deg, #e5ff00, #FFF, #07e2ff)no-repeat;
+  }
+}
+@media (orientation: landscape) and (max-width: 768px) {
+  body {
+    background:linear-gradient(45deg, #0400ff, #FFF, #ffd207)no-repeat;
+  }
+}
+@media (orientation: portrait) and (max-width: 320px) {
+  body {
+    background:linear-gradient(45deg, #00ff37, #FFF, #ff0707)no-repeat;
+  }
+}
+@media (orientation: landscape) and (max-width: 320px) {
+  body {
+    background:linear-gradient(45deg, #5900ff, #FFF, #ff07ea)no-repeat;
+  } 
+}
