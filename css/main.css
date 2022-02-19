@@ -144,28 +144,18 @@ figure figcaption {
   text-align: center;
 }
 
-@media (max-width: 1200px) {
+@media all and (max-width: 1200px) {
   body{
   background:linear-gradient(45deg, #ffa600, #FFF, #BB8FCE)no-repeat;
   }
 }
-@media (orientation: portrait) and (max-width: 768px) {
+@media all and (max-width: 768px) {
   body {
     background:linear-gradient(45deg, #e5ff00, #FFF, #07e2ff)no-repeat;
   }
 }
-@media (orientation: landscape) and (max-width: 768px) {
-  body {
-    background:linear-gradient(45deg, #0400ff, #FFF, #ffd207)no-repeat;
-  }
-}
-@media (orientation: portrait) and (max-width: 320px) {
+@media all and (max-width: 320px) {
   body {
     background:linear-gradient(45deg, #00ff37, #FFF, #ff0707)no-repeat;
   }
-}
-@media (orientation: landscape) and (max-width: 320px) {
-  body {
-    background:linear-gradient(45deg, #5900ff, #FFF, #ff07ea)no-repeat;
-  } 
 }
